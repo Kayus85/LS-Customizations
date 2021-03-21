@@ -8,6 +8,7 @@
     if (xhr.status >= 200 && xhr.status < 400) {
       let a = JSON.parse(this.responseText);
       console.log(a.Shop[0].name);
+      console.log('also i\'m a monkey');
     }
   };
   xhr.send();
