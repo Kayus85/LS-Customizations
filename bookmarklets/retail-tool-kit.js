@@ -17,7 +17,6 @@
 function GIT_() {
   console.log("backoffice");
   var script_ = document.createElement('script');
-  // removed reference to the version to load latest commit at all times
   script_.src = `https://cdn.jsdelivr.net/gh/Kayus85/LS-Customizations/scripts/display-account-id.js`;
   document.body.appendChild(script_);
-};
+}
