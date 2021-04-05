@@ -12,4 +12,6 @@
     }
   };
   xhr.send();
+  let div_wrap = document.createElement('div');
+  div_wrap.setAttribute('style', 'position: fixed!important;z-index: 9999999!important;background-color: rgba(0,0,0,0.6)!important;top: 0!important;bottom: 0!important;left: 0!important;right: 0!important;height: 100vh!important;');
 }();
