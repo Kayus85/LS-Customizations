@@ -8,15 +8,16 @@
       let vers = JSON.parse(xhr.responseText);
       let releaseVersion = vers[0].tag_name;
       console.log(`git version ${vers[0].tag_name}`);
-      GIT_(releaseVersion);
+      GIT_();
     }
   };
   xhr.send();
 }();
 
-function GIT_(releaseVersion) {
+function GIT_() {
   console.log("backoffice");
   var script_ = document.createElement('script');
-  script_.src = `https://cdn.jsdelivr.net/gh/Kayus85/LS-Customizations@${releaseVersion}/scripts/display-account-id.js`;
+  // removed reference to the version to load latest commit at all times
+  script_.src = `https://cdn.jsdelivr.net/gh/Kayus85/LS-Customizations/scripts/display-account-id.js`;
   document.body.appendChild(script_);
 };
